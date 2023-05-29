@@ -1,14 +1,15 @@
 kind: Route
 apiVersion: route.openshift.io/v1
 metadata:
-  name: ui
+  name: bee-travels
+  namespace: bee-travels
   labels:
     app: ui
+    app.kubernetes.io/instance: bee-travels
   annotations:
     openshift.io/host.generated: 'true'
 spec:
-  host: >-
-    bee-travels.
+  host: bee-travels-bee-travels.apps.cluster-qgfhc.qgfhc.sandbox373.opentlc.com
   to:
     kind: Service
     name: ui
@@ -19,3 +20,4 @@ spec:
     termination: edge
     insecureEdgeTerminationPolicy: Redirect
   wildcardPolicy: None
+

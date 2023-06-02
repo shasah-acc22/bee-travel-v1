@@ -18,11 +18,11 @@ spec:
       maxSurge: 25%
     resources:
       limits:
-        cpu: 20m
+        cpu: 200m
         memory: 256Mi
       requests:
-        cpu: 10m
-        memory: 128Mi
+        cpu: 200m
+        memory: 256Mi
     activeDeadlineSeconds: 21600
   replicas: 1
   revisionHistoryLimit: 10
@@ -58,11 +58,11 @@ spec:
               value: '9000'
           resources:
             limits:
-              cpu: 20m
+              cpu: 200m
               memory: 256Mi
             requests:
-              cpu: 10m
-              memory: 128Mi
+              cpu: 200m
+              memory: 256Mi
           imagePullPolicy: Always
       restartPolicy: Always
       terminationGracePeriodSeconds: 30

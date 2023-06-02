@@ -19,10 +19,10 @@ spec:
     resources:
       limits:
         cpu: 20m
-        memory: 16Mi
+        memory: 256Mi
       requests:
         cpu: 10m
-        memory: 8Mi
+        memory: 128Mi
     activeDeadlineSeconds: 21600
   replicas: 1
   revisionHistoryLimit: 10
@@ -51,10 +51,10 @@ spec:
           resources:
             limits:
               cpu: 20m
-              memory: 16Mi
+              memory: 256Mi
             requests:
               cpu: 10m
-              memory: 8Mi
+              memory: 128Mi
           imagePullPolicy: Always
       restartPolicy: Always
       terminationGracePeriodSeconds: 30
